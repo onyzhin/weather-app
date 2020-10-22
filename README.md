@@ -1,11 +1,11 @@
 # WeatherApp
 
 To achieve the purpose of creating *clean and reusable*(maintainable) code i decided to apply the next points:
-- Abstractions Between Application Layers,
-- Unidirectional Data Flow,
-- Reactive State Management,
-- Modular Design,
-- Smart And Dumb Components Pattern.
+- Abstractions between application layers,
+- Unidirectional data flow,
+- Reactive state management,
+- Modular design,
+- Smart and dumb components pattern.
 
 I have used the next layers: 
 - **Presentation layer** 
