@@ -8,16 +8,13 @@ To achieve the purpose of creating *clean and reusable*(maintainable) code i dec
 - Smart And Dumb Components Pattern.
 
 I have used the next layers: 
-- **Presentation layer**
-
+- **Presentation layer** 
 It presents the UI and delegates user's actions to the core layer, through the abstraction layer. 
 
 - **Abstraction layer**
-
 It exposes the streams of state in the presentation layer(components), playing the role of the *facade*.
 
 - **Core layer**
-
 It responsible for data manipulation and outside world communication
 
 ![](https://sketch.io/render/sk-a5399ba1b3188a6f088d25a46776a6b4.jpeg)
@@ -25,9 +22,9 @@ It responsible for data manipulation and outside world communication
 ### State management
 For state management, I could use NgRx, @ngrx/component-store, or NGXS. But for such a tiny project(and to make the development a bit faster) I decided to use a custom implementation of the store, based on BehaviorSubject. 
 Basic requirements were:
-- define a state interface and set the initial state
-- update state
-- select state (selected stated should be returned as an Observable)
+- Define a state interface and set the initial state
+- Update state
+- Select state (selected stated should be returned as an Observable)
 
 *The abstraction layer makes all components independent of the state management solution. So, if the project becomes very big and complex it'll be easy to replace the solution.*
 
@@ -36,7 +33,7 @@ For loading data, I could use Angular resolvers.
 As official documentation says: "A data provider class can be used with the router to resolve data during navigation. The router waits for the data to be resolved before the route is finally activated."
 It means that the page won't be shown before the data is loaded. That is not what I want.
 I decided to load data with the help of guards because of a couple of reasons:
-1) it is easy to reuse and combine guards
+1) It is easy to reuse and combine guards
 2) I could redirect to the aimed page and show default data or preloader, so it'll look like more naturally for the user.
 3) I need to cache data and load it only once because free APIs have restrictions for calls per minute.
 
