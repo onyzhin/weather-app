@@ -1,0 +1,8 @@
+<div class="tile bg-info text-white">
+  <p>
+    <span class="weather-time h5">{{ forecast?.dt_txt | date : 'H:mm'}}</span>
+    <span class="weather-date font-weight-light" *ngIf="!isSameDayAsCurrent">{{ forecast?.dt_txt | date : ' (MMM d)'}}</span>
+  </p>
+  <p class="weather-temp h4">{{ forecast?.main?.temp | temperatureFormatter }}</p>
+  <p class="weather-wind">{{ forecast?.wind?.speed | windFormatter }}</p>
+</div>

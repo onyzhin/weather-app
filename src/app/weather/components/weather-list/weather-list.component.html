@@ -1,0 +1,21 @@
+<table class="table table-striped weather-table">
+  <thead>
+  <tr>
+    <th scope="col">Country</th>
+    <th scope="col">Temperature</th>
+    <th scope="col">Wind speed</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr
+      *ngFor="let entity of entities;"
+      class="table-row"
+      (click)="openWeatherDetails(entity)">
+    <td>{{ entity?.name }}</td>
+    <td>{{ entity?.main?.temp | temperatureFormatter }}</td>
+    <td>{{ entity?.wind?.speed | windFormatter }}</td>
+  </tr>
+  </tbody>
+</table>
+
+

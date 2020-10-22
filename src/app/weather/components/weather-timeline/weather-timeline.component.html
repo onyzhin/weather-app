@@ -1,0 +1,8 @@
+<div class="timeline row row-cols-1 row-cols-lg-6 no-gutters justify-content-between">
+  <ng-container *ngFor="let forecast of timeline">
+    <app-weather-tile
+      class="weather-tile col mb-4"
+      [forecast]="forecast">
+    </app-weather-tile>
+  </ng-container>
+</div>

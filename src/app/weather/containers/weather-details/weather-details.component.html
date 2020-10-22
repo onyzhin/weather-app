@@ -1,0 +1,15 @@
+<div class="container-fluid">
+  <div class="mb-4">
+    <app-back-button (backClick)="openWeatherList()"></app-back-button>
+  </div>
+
+  <ng-container *ngIf="forecastEntity$ | async as forecastEntity">
+    <h2 class="mb-4 text-center">{{forecastEntity?.city?.name}} <small class="text-muted">{{currentDate | date : 'EEE, MMM d'}}</small></h2>
+
+    <app-weather-timeline
+      [timeline]="forecastEntity?.list">
+    </app-weather-timeline>
+  </ng-container>
+
+  <app-preloader *ngIf="loading$ | async"></app-preloader>
+</div>

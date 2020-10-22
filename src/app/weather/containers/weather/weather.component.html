@@ -1,0 +1,12 @@
+<div class="container-fluid">
+  <app-weather-list
+    [entities]="weatherEntities$ | async"
+    (openDetails)="openWeatherDetails($event)">
+  </app-weather-list>
+
+  <app-preloader *ngIf="loading$ | async"></app-preloader>
+
+  <div class="alert alert-danger" role="alert" *ngIf="error$ | async" @fadeInAndOut>
+    Technical error. Try again later
+  </div>
+</div>

@@ -1,0 +1,25 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+:host {
+  display: block;
+}
+.tile {
+  width: 100%;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+p {
+  margin-bottom: 0;
+}
+
+@include media-breakpoint-down(md) {
+  .tile {
+    min-height: 150px;
+    flex-direction: row;
+  }
+ }
