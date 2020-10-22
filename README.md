@@ -34,7 +34,7 @@ As official documentation says: "A data provider class can be used with the rout
 It means that the page won't be shown before the data is loaded. That is not what I want.
 I decided to load data with the help of guards because of a couple of reasons:
 1) It is easy to reuse and combine guards
-2) I could redirect to the aimed page and show default data or preloader, so it'll look like more naturally for the user.
+2) I can redirect to the aimed page and show default data or preloader, so it'll look like more naturally for the user.
 3) I need to cache data and load it only once because free APIs have restrictions for calls per minute.
 
 
