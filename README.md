@@ -9,12 +9,15 @@ To achieve the purpose of creating *clean and reusable*(maintainable) code i dec
 
 I have used the next layers: 
 - **Presentation layer**
+
 It presents the UI and delegates user's actions to the core layer, through the abstraction layer. 
 
 - **Abstraction layer**
+
 It exposes the streams of state in the presentation layer(components), playing the role of the *facade*.
 
 - **Core layer**
+
 It responsible for data manipulation and outside world communication
 
 ![](https://sketch.io/render/sk-a5399ba1b3188a6f088d25a46776a6b4.jpeg)
