@@ -30,7 +30,7 @@ Basic requirements were:
 
 ### Loading data into smart components
 For loading data, I could have used Angular resolvers.
-As official documentation says: "A data provider class can be used with the router to resolve data during navigation. The router waits for the data to be resolved before the route is finally activated." It means that the page won't be shown before the data is loaded. That is not what I want.
+As official documentation says: "A data provider class can be used with the router to resolve data during navigation. The router waits for the data to be resolved before the route is finally activated." It means that the page won't be shown before the data is loaded. That is not what I wanted.
 I decided to load data with the help of guards because of a couple of reasons:
 1) It is easy to reuse and combine guards
 2) I wanted to have a possibility of going to the target page and show default data or preloader to avoid delay between a click on the link and redirection itself. Such a scenario could enhance the user experience.
