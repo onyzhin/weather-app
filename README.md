@@ -52,7 +52,11 @@ Spectator reduces boilerplate required to set up an Angular test suite.
 
 ![](http://dl4.joxi.net/drive/2020/10/22/0028/0728/1864408/08/f3a9ff4381.jpg)
 
+### UI
 
+![](http://dl3.joxi.net/drive/2020/10/22/0028/0728/1864408/08/ffe95e597d.jpg)
+![](http://dl4.joxi.net/drive/2020/10/22/0028/0728/1864408/08/ea749f52d7.jpg)
+![](http://dl4.joxi.net/drive/2020/10/22/0028/0728/1864408/08/bac3186671.jpg)
 
 ## Installation
 
